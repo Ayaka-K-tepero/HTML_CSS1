@@ -1,0 +1,255 @@
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.FirstView {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+
+.Header {
+    width: 100%;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.Header_container{
+    display:flex;
+    margin: 0 36px 0 36px;
+    position: relative;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+
+.HeaderLogo__image--pc {
+    display: block;
+    height: 20px;
+    width: auto;
+}
+
+.FirstView__main-image--sp {
+    display: none;
+}
+
+.FirstView__main-image FirstView__main-image--sp {
+    display: none;
+}
+
+
+.HeaderLogo__image--sp {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.HeaderNav {
+    display: inline-flex;
+    position: relative;
+}
+
+.HeaderNavHamburger {
+    display: none;
+}
+
+.HeaderNav_list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeaderNavListItem__link {
+    display: block;
+    margin-right: 45px;
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.Nav_newline1 {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+.Nav_newline2 {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: black;
+}
+
+.HeaderNavListItem__button {
+    background-color: orange;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.FirstView_container {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.FirstViewContent {
+    margin-bottom: 70px;
+    width: fit-content;
+}
+
+.FirstViewContent_title {
+    font-size: 38px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 45px;
+    text-align: center;
+    width: 540px;
+    height: auto;
+}
+
+.FirstViewContent_image {
+    margin-bottom: 45px;
+}
+
+.image1 {
+    margin-right: 8px;
+}
+
+.image2 {
+    margin-right: 8px;
+    width: 200px;
+    height: auto;
+}
+
+.image3 {
+}
+
+img {
+    vertical-align: middle;
+}
+
+.FirstViewContact_button {
+    height: 64px;
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.FirstViewContent_button1 {
+    background-color: orange;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+
+.FirstViewContent_button2 {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    padding:20px 30px;
+    border-radius: 30px;
+}
+
+p {
+    font-size: 12px;
+    color: #A2A2A4;
+}
+
+
+@media (max-width: 1080px){
+    
+    .Header_container {
+    display: flex;
+    margin: 0 25px 0 25px;
+    position: relative;
+    justify-content: space-between;
+}
+    
+    .HeaderNav{
+        display: inline-flex;
+    }
+    
+    .HeaderNavHamburger {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 21px;
+        z-index: 100;
+}
+    .HeaderNavHamburger_line {
+        
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        justify-content:space-between;
+        
+    }
+    
+    .HeaderNavHamburger_line:nth-of-type(1) {
+        bottom: 20px;
+    }
+    
+    .HeaderNavHamburger_line:nth-of-type(2) {
+        bottom: 10px;
+    }
+    
+    .HeaderNavHamburger_line:nth-of-type(3) {
+        bottom: 0px;
+    }
+    
+    .HeaderNav_list {
+        overflow-y: scroll;
+        position: fixed;
+        top: 60px;
+        left: 100%;
+        width: 100%;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 75px;
+        transition: transform 0.5s;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
+    }  
+}
+
+@media (max-width: 767px){
+    .FirstView__main-image--sp {
+        display: block;
+}
+
+    .HeaderLogo__image--sp {
+        display: block;
+        
+}
+
+    .HeaderLogo__image--pc {
+        display: none;
+    }
+
+    .FirstView {
+        background-image: none;
+}
+
+}
