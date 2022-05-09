@@ -200,7 +200,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 200px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -452,8 +451,20 @@ img {
         width: 27.5%;
     }
     
+    .FirstViewContact_button {
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .FirstViewContact_button a{
+        width: 100% !important;
+    }
+    
     .FirstViewContent_button1 {
         width: 100% !important;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     .FirstViewContent_button2 {
